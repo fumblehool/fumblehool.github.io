@@ -15,5 +15,9 @@ footer{
 }
 
 .banner{
-  width:700px;
+  width:100%;
+}
+
+.content{
+  margin-top:10px;
 }

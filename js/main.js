@@ -55,7 +55,7 @@ var Content = React.createClass({
 
 		return(
 
-			<div className="border">
+			<div className="border content">
 			<center>
 				<h1> Content section</h1>
 				</center>
