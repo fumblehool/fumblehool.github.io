@@ -1,7 +1,19 @@
 .container {
-    max-width: 730px;
+    max-width: 740px;
 }
 
 .border {
   border: 2px solid red;
+}
+
+body{
+    margin-top:75px;
+}
+
+footer{
+    margin:10px;
+}
+
+.banner{
+  width:700px;
 }
