@@ -1,0 +1,27 @@
+[
+	{
+		"id": 1,
+		"title": "Hello World!",
+		"author": "Damanpreet",
+		"post": "This is a test post. HEllo everyone this is my first post
+			 . So far so good."
+	},
+	{
+		"id": 2,
+		"title": "Second post",
+		"author": "Damanpreet",
+		"post": "This is second test post. HEllo everyone this is second post."
+	},
+	{
+		"id": 3,
+		"title": "Third Test Post",
+		"author": "Damanpreet",
+		"post": "This is second test post. HEllo everyone this is second post. I think it will look pretty cool"
+	},
+	{
+		"id": 4,
+		"title": "Fourth Post",
+		"author": "Damanpreet",
+		"post": "This is fourth test post. So far i have copied same post."
+	}
+]
