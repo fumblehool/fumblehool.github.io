@@ -71,11 +71,16 @@ var Footer = React.createClass({
 
 		return(
 
-			<div className="border">
-			<center>
-				<h1> Footer section</h1>
-				</center>
-			</div>
+			<div className="border center">
+			<footer>
+        <center>
+        <hr/>
+        <p class="text-center">
+            Copyright © Owner_Name. All rights reserved.
+        </p>
+        </center>
+    </footer>
+		</div>
 
 		)
 	}
