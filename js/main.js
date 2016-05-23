@@ -3,7 +3,7 @@ var Banner = React.createClass({
 	render: function(){
 
 		return(
-			<div className="border">
+			<div className="">
 			<center>
 				<img className="banner" src="img/banner.jpg"/>
 			</center>
@@ -50,14 +50,26 @@ var Navbar = React.createClass({
 });
 
 var Content = React.createClass({
+	//
+	// fet_data: function(){
+	// 	var Req = new XMLHttpRequest();
+	// 	Req.onload = reqListener;
+	// 	Req.open("get", "data.json", true);
+	// 	Req.send();
+	//
+	// 	function reqListener(e) {
+	// 	data = JSON.parse(this.responseText);
+	// 	return data;
+	// }
 
 	render: function(){
 
 		return(
 
-			<div className="border content">
+			<div className="content">
 			<center>
 				<h1> Content section</h1>
+				// <h1> fet_data()</h1>
 				</center>
 			</div>
 
@@ -71,12 +83,12 @@ var Footer = React.createClass({
 
 		return(
 
-			<div className="border center">
+			<div className="center content">
 			<footer>
         <center>
         <hr/>
         <p class="text-center">
-            Copyright © Owner_Name. All rights reserved.
+            Copyright © Daman. All rights reserved.
         </p>
         </center>
     </footer>
