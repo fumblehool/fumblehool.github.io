@@ -1,3 +1,10 @@
+var data = {
+						["The first test post"],
+						["The Second test post"],
+						["The Third test post"]
+};
+
+
 var Banner = React.createClass({
 
 	render: function(){
@@ -68,8 +75,9 @@ var Content = React.createClass({
 
 			<div className="content">
 			<center>
+			<div className="page-header">
 				<h1> Content section</h1>
-				// <h1> fet_data()</h1>
+			</div>
 				</center>
 			</div>
 
@@ -106,7 +114,7 @@ var Main = React.createClass({
 			<div>
 				< Navbar />
 				< Banner />
-				< Content />
+				< Content data=data />
 				< Footer />
 				</div>
 		)
