@@ -1,8 +1,8 @@
-var data = {
-						["The first test post"],
-						["The Second test post"],
-						["The Third test post"]
-};
+ var data = [
+ 						{post:'The first test post'},
+ 						{post:'The Second test post'},
+ 						{post:'The Third test post'}
+ ];
 
 
 var Banner = React.createClass({
@@ -71,13 +71,20 @@ var Content = React.createClass({
 
 	render: function(){
 
+		var row = [];
+		this.props.data.forEach(function(dt){
+				row.push(dt.post);
+				row.push(<br/>);
+		});
 		return(
 
 			<div className="content">
 			<center>
 			<div className="page-header">
 				<h1> Content section</h1>
+
 			</div>
+			<h3> {row}</h3><br/>
 				</center>
 			</div>
 
@@ -114,7 +121,7 @@ var Main = React.createClass({
 			<div>
 				< Navbar />
 				< Banner />
-				< Content data=data />
+				< Content data={data} />
 				< Footer />
 				</div>
 		)
