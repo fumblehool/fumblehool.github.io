@@ -21,3 +21,7 @@ footer{
 .content{
   margin-top:10px;
 }
+
+.less-top-padding{
+  padding-top: 2%;
+}

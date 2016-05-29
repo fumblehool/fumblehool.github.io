@@ -4,6 +4,22 @@
  						{post:'The Third test post'}
  ];
 
+ var Post = React.createClass({
+
+ 	render: function(){
+ 		return(
+ 			<div className="">
+ 			<center>
+			<p className="jumbotron less-top-padding">
+				{this.props.title}<br/>
+				{this.props.data}
+			</p>
+			<br/>
+ 			</center>
+ 			</div>
+ 		)
+ 	}
+ });
 
 var Banner = React.createClass({
 
@@ -15,6 +31,63 @@ var Banner = React.createClass({
 				<img className="banner" src="img/banner.jpg"/>
 			</center>
 			</div>
+		)
+	}
+});
+
+
+var Content = React.createClass({
+	//
+	// fet_data: function(){
+	// 	var Req = new XMLHttpRequest();
+	// 	Req.onload = reqListener;
+	// 	Req.open("get", "data.json", true);
+	// 	Req.send();
+	//
+	// 	function reqListener(e) {
+	// 	data = JSON.parse(this.responseText);
+	// 	return data;
+	// }
+
+	render: function(){
+
+		var row = [];
+		this.props.data.forEach(function(dt){
+				row.push(<Post data={dt.post} title="Post Title"/>);
+		});
+		return(
+
+			<div className="content">
+			<center>
+			<div className="page-header">
+				<h1> Posts</h1>
+			</div>
+
+			{row}
+			</center>
+			</div>
+
+		)
+	}
+});
+
+var Footer = React.createClass({
+
+	render: function(){
+
+		return(
+
+			<div className="center content">
+			<footer>
+        <center>
+        <hr/>
+        <p class="text-center">
+            Copyright © Daman. All rights reserved.
+        </p>
+        </center>
+    </footer>
+		</div>
+
 		)
 	}
 });
@@ -56,62 +129,6 @@ var Navbar = React.createClass({
 	}
 });
 
-var Content = React.createClass({
-	//
-	// fet_data: function(){
-	// 	var Req = new XMLHttpRequest();
-	// 	Req.onload = reqListener;
-	// 	Req.open("get", "data.json", true);
-	// 	Req.send();
-	//
-	// 	function reqListener(e) {
-	// 	data = JSON.parse(this.responseText);
-	// 	return data;
-	// }
-
-	render: function(){
-
-		var row = [];
-		this.props.data.forEach(function(dt){
-				row.push(dt.post);
-				row.push(<br/>);
-		});
-		return(
-
-			<div className="content">
-			<center>
-			<div className="page-header">
-				<h1> Content section</h1>
-
-			</div>
-			<h3> {row}</h3><br/>
-				</center>
-			</div>
-
-		)
-	}
-});
-
-var Footer = React.createClass({
-
-	render: function(){
-
-		return(
-
-			<div className="center content">
-			<footer>
-        <center>
-        <hr/>
-        <p class="text-center">
-            Copyright © Daman. All rights reserved.
-        </p>
-        </center>
-    </footer>
-		</div>
-
-		)
-	}
-});
 
 var Main = React.createClass({
 
