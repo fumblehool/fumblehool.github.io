@@ -4,8 +4,10 @@
  						{post:'The Third test post'}
  ];
 
+var nav_data = ['Home','Contact','About'];
 
  var Post = React.createClass({
+
  	render: function(){
  		return(
  			<div className="">
@@ -22,7 +24,9 @@
  });
 
 var Banner = React.createClass({
+
 	render: function(){
+
 		return(
 			<div className="">
 			<center>
@@ -48,27 +52,33 @@ var Content = React.createClass({
 	// }
 
 	render: function(){
+
 		var row = [];
 		this.props.data.forEach(function(dt){
 				row.push(<Post data={dt.post} title="Post Title"/>);
 		});
 		return(
+
 			<div className="content">
 			<center>
 			<div className="page-header">
 				<h1> Posts</h1>
 			</div>
+
 			{row}
 			</center>
 			</div>
+
 		)
 	}
 });
 
-
 var Footer = React.createClass({
+
 	render: function(){
+
 		return(
+
 			<div className="center content">
 			<footer>
         <center>
@@ -79,6 +89,7 @@ var Footer = React.createClass({
         </center>
     </footer>
 		</div>
+
 		)
 	}
 });
@@ -118,18 +129,27 @@ var Navbar = React.createClass({
                   </div>
                      <button type="submit" className="btn btn-default"> Submit</button>
                </form>
+
+
           <ul className="nav navbar-nav">
+
           {this.props.items.map(function(item,m){
             var style = '';
+
              if ( self.state.focused == m){
                  style = 'active'
              }
-             return <li className={style}><a href="#">{item}</a></li>
+
+             return <li className={style} onClick={self.clicked.bind(self,m)}><a href="#">{item}</a></li>
+
           })}
           </ul>
           </nav>
           </div>
+
           </header>
+
+
       </div>
 		)
 	}
@@ -142,7 +162,7 @@ var Main = React.createClass({
 
 		return(
 			<div>
-				< Navbar items={['Home','Contact','About']} />
+				< Navbar items={nav_data} />
 				< Banner />
 				< Content data={data} />
 				< Footer />
