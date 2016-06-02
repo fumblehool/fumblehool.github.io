@@ -4,8 +4,8 @@
  						{post:'The Third test post'}
  ];
 
- var Post = React.createClass({
 
+ var Post = React.createClass({
  	render: function(){
  		return(
  			<div className="">
@@ -22,9 +22,7 @@
  });
 
 var Banner = React.createClass({
-
 	render: function(){
-
 		return(
 			<div className="">
 			<center>
@@ -50,33 +48,27 @@ var Content = React.createClass({
 	// }
 
 	render: function(){
-
 		var row = [];
 		this.props.data.forEach(function(dt){
 				row.push(<Post data={dt.post} title="Post Title"/>);
 		});
 		return(
-
 			<div className="content">
 			<center>
 			<div className="page-header">
 				<h1> Posts</h1>
 			</div>
-
 			{row}
 			</center>
 			</div>
-
 		)
 	}
 });
 
+
 var Footer = React.createClass({
-
 	render: function(){
-
 		return(
-
 			<div className="center content">
 			<footer>
         <center>
@@ -87,44 +79,58 @@ var Footer = React.createClass({
         </center>
     </footer>
 		</div>
-
 		)
 	}
 });
 
 var Navbar = React.createClass({
 
+  getInitialState: function(){
+      return{ focused:  0 };
+  },
+
+  clicked: function(number){
+      this.setState({
+          focused: number
+      })
+  },
+
 	render: function(){
+    var self = this;
 
 		return(
-			<div>
-			<header className="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
-        <div className="container">
-            <div className="navbar-header">
-               <button className="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                    <span className="sr-only">Toggle navigation</span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                </button>
-                <a href="index.html" className="navbar-brand">fumblehool</a>
-            </div>
+      <div>
+        <header className="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+           <div className="container">
+               <div className="navbar-header">
+                  <button className="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                       <span className="sr-only">Toggle navigation</span>
+                       <span className="icon-bar"></span>
+                       <span className="icon-bar"></span>
+                       <span className="icon-bar"></span>
+                  </button>
+                  <a href="index.html" className="navbar-brand">fumblehool</a>
+               </div>
             <nav className="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                <form className="navbar-form navbar-right" role="search">
-                    <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Search"/>
-                    </div>
-                    <button type="submit" className="btn btn-default"> Submit</button>
-                </form>
-                <ul className="nav navbar-nav">
-                    <li className="active"><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-		</div>
+               <form className="navbar-form navbar-right" role="search">
+                  <div className="form-group">
+                     <input type="text" className="form-control" placeholder="Search"/>
+                  </div>
+                     <button type="submit" className="btn btn-default"> Submit</button>
+               </form>
+          <ul className="nav navbar-nav">
+          {this.props.items.map(function(item,m){
+            var style = '';
+             if ( self.state.focused == m){
+                 style = 'active'
+             }
+             return <li className={style}><a href="#">{item}</a></li>
+          })}
+          </ul>
+          </nav>
+          </div>
+          </header>
+      </div>
 		)
 	}
 });
@@ -136,7 +142,7 @@ var Main = React.createClass({
 
 		return(
 			<div>
-				< Navbar />
+				< Navbar items={['Home','Contact','About']} />
 				< Banner />
 				< Content data={data} />
 				< Footer />
