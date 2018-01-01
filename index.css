@@ -1,16 +1,3 @@
-.r-b {
-  border: 2px solid red;
-}
-
-.blue {
-  border: 2px solid blue;
-}
-.black {
-  border: 2px solid black;
-}
-.yellow {
-  border: 2px solid yellow;
-}
 .container {
   display: flex;
   justify-content: center;
@@ -23,6 +10,10 @@
   justify-content: center;
   width:60%;
   margin:auto;
+}
+
+#projects {
+  width: 80%;
 }
 
 .home {
