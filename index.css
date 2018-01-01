@@ -1,0 +1,133 @@
+.r-b {
+  border: 2px solid red;
+}
+
+.blue {
+  border: 2px solid blue;
+}
+.black {
+  border: 2px solid black;
+}
+.yellow {
+  border: 2px solid yellow;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width:100%;
+}
+
+.shell {
+  display: flex;
+  justify-content: center;
+  width:60%;
+  margin:auto;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home__avatar {
+    margin: auto;
+    max-width: 160px;
+    max-height: 160px;
+    box-shadow: 0 2px 4px 0 #a2a2a2;
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.home__avatar img {
+    width: 100%;
+}
+
+.home__details {
+    margin-top: 20px;
+    padding: 0 10%;
+}
+
+.home__details__introduction {
+    font-size: 24px;
+    text-align: center;
+    line-height: 42px;
+}
+
+.home__details__platforms {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home__details__platforms a {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin:5px;
+    padding:5px 10px;
+    border-radius: 50px;
+    background-color: #0084bf;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+
+.home__details__platforms a:hover {
+    box-shadow: 0 2px 4px 0 #a2a2a2;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 0 10%;
+}
+
+.projects h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.projects ol>li{
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.projects ol>li>p>a{
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.link {
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+    color: black;   
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    margin-top:50px;
+}
+
+.home__details__social__icon {
+    margin-right: 4px;    
+}
+
+
+.education {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0 10%;
+}
