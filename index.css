@@ -41,7 +41,6 @@
 }
 
 .home__details__introduction {
-    font-size: 24px;
     text-align: center;
     line-height: 42px;
 }
@@ -83,7 +82,6 @@
 }
 
 .projects ol>li{
-    font-size: 24px;
     line-height: 40px;
 }
 
