@@ -1,25 +1,25 @@
 .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
 }
 
 .shell {
-  display: flex;
-  justify-content: center;
-  width:60%;
-  margin:auto;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
 }
 
 #projects {
-  width: 80%;
+    width: 80%;
 }
 
 .home {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .home__avatar {
@@ -55,8 +55,8 @@
     font-size: 14px;
     display: flex;
     justify-content: center;
-    margin:5px;
-    padding:5px 10px;
+    margin: 5px;
+    padding: 5px 10px;
     border-radius: 50px;
     background-color: #0084bf;
     text-decoration: none;
@@ -81,11 +81,11 @@
     padding: 0px;
 }
 
-.projects ol>li{
+.projects ol>li {
     line-height: 40px;
 }
 
-.projects ol>li>p>a{
+.projects ol>li>p>a {
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: 2px solid black;
@@ -96,7 +96,7 @@
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: 2px solid black;
-    color: black;   
+    color: black;
 }
 
 * {
@@ -104,14 +104,13 @@
 }
 
 body {
-    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-    margin-top:50px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    /* margin-top: 50px; */
 }
 
 .home__details__social__icon {
-    margin-right: 4px;    
+    margin-right: 4px;
 }
-
 
 .education {
     display: flex;
@@ -119,4 +118,70 @@ body {
     flex-direction: column;
     margin-top: 20px;
     padding: 0 10%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.sidebar__platforms {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sidebar__platforms a {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    /* margin: 5px; */
+    padding: 5px 10px;
+    border-radius: 100px;
+    /* background-color: #0084bf; */
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+
+.sidebar__platforms a:hover {
+    box-shadow: 0 2px 4px 0 #a2a2a2;
 }

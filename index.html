@@ -1,121 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Damanpreet Singh</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Damanpreet Singh - fumblehool">
-  <meta name="Author" content="Damanpreet">
-
-  <link href="index.css" rel="stylesheet"/>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Damanpreet Singh</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Damanpreet Singh - fumblehool">
+    <meta name="Author" content="Damanpreet">
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="index.js"></script>
 </head>
+
 <body>
-  <div class="container">
-    <div class="home shell" id="home">
-      <div class="home__avatar">
-        <img src="assets/me.jpg"
-        class="home__avatar__image"
-        />
-      </div>  
-      <div class="home__details">
-        <div class="home__details__introduction">
-          Hi, my name is <b>Damanpreet Singh</b> and I'm a Lazy Codr.<br/> 
-          Mostly I'm experimenting with <a href="#projects" class=" link">code</a>. <br/>
-          Have a look around and please don’t hesitate to contact me with any questions, comments or just to say hello :)
+    <div id="SideNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#projects">Projects</a>
+        <a href="resume/resume.pdf">Résumé</a>
+        <a href="#">About</a>
+        <div class="sidebar__platforms">
+            <a href="https://github.com/fumblehool" target="_blank">
+                <i class="fa fa-github home__details__social__icon"></i>
+            </a>
+            <a href="https://twitter.com/fumblehool" target="_blank">
+                <i class="fa fa-twitter home__details__social__icon"></i>
+            </a>
+            <a href="https://fumblehool.wordpress.com" target="_blank">
+                <i class="fa fa-wordpress home__details__social__icon"></i>
+            </a>
+            <a href="https://linkedin.com/in/damanpreet-singh" target="_blank">
+                <i class="fa fa-linkedin home__details__social__icon"></i>
+            </a>
+            <a href="mailto:daman.4880@gmail.com">
+                <i class="fa fa-paper-plane home__details__social__icon"></i>
+            </a>
+            <a href="resume/resume.pdf" target="_blank">
+                <i class="fa fa-file-word-o home__details__social__icon"></i>
+            </a>
         </div>
-        <div class="home__details__platforms">
-          <a href="https://github.com/fumblehool" target="_blank">
-            <i class="fa fa-github home__details__social__icon"></i>
-          Github</a>
-          <a href="https://twitter.com/fumblehool" target="_blank">
-            <i class="fa fa-twitter home__details__social__icon"></i>
-          Twitter</a>
-          <a href="https://fumblehool.wordpress.com" target="_blank">
-            <i class="fa fa-wordpress home__details__social__icon"></i>
-          Blog</a>
-          <a href="https://linkedin.com/in/damanpreet-singh" target="_blank">
-            <i class="fa fa-linkedin home__details__social__icon"></i>
-          LinkedIn</a>
-          <a href="mailto:daman.4880@gmail.com">
-            <i class="fa fa-paper-plane home__details__social__icon"></i>
-          Email
-          </a>
-          <a href="https://docs.google.com/document/d/1ULvMLevV36_a6THupuYCWasJQhfYqQmHnJBBZ5ZS_1g/edit?usp=sharing" target="_blank">
-            <i class="fa fa-file-word-o home__details__social__icon"></i>
-          Résumé
-          </a>
-          
+    </div>
+    <div class="container">
+        <div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
-      </div>
+        <div class="column">
+            <div class="home shell" id="home">
+                <div class="home__avatar">
+                    <img src="assets/me.jpg" class="home__avatar__image" />
+                </div>
+                <div class="home__details">
+                    <div class="home__details__introduction">
+                        Hi, my name is <b>Damanpreet Singh</b> and I'm a Lazy Codr.<br/> Mostly I'm experimenting with <a href="#projects" class=" link">code</a>. <br/> Have a look around and please don’t hesitate to contact me with any questions, comments
+                        or just to say hello :)
+                    </div>
+                    <div class="home__details__platforms">
+                        <a href="https://github.com/fumblehool" target="_blank">
+                            <i class="fa fa-github home__details__social__icon"></i> Github
+                        </a>
+                        <a href="https://twitter.com/fumblehool" target="_blank">
+                            <i class="fa fa-twitter home__details__social__icon"></i> Twitter
+                        </a>
+                        <a href="https://fumblehool.wordpress.com" target="_blank">
+                            <i class="fa fa-wordpress home__details__social__icon"></i> Blog
+                        </a>
+                        <a href="https://linkedin.com/in/damanpreet-singh" target="_blank">
+                            <i class="fa fa-linkedin home__details__social__icon"></i> LinkedIn
+                        </a>
+                        <a href="mailto:daman.4880@gmail.com">
+                            <i class="fa fa-paper-plane home__details__social__icon"></i> Email
+                        </a>
+                        <a href="resume/resume.pdf" target="_blank">
+                            <i class="fa fa-file-word-o home__details__social__icon"></i> Résumé
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shell projects" id="projects">
+                <h1>Projects</h1>
+                <ol class="list">
+                    <li class="list__item">
+                        <p class="list__item__heading">
+                            <a href="https://github.com/fumblehool/pals-around" target="_blank" rel="noopener nofollow">Pals-Around</a>: A Social Networking Platform
+                        </p>
+                        <p class="list__item__body">
+                            A social networking platform where users can post updates, follow users and ability to view the updates (timeline) made using Node.js (express), Mongodb and Docker [<a href="https://github.com/fumblehool/pals-around" target="_blank"
+                                rel="noopener nofollow">code</a>]
+                        </p>
+                    </li>
+
+                    <li class="list__item">
+                        <p class="list__item__heading">
+                            <a href="https://github.com/fumblehool/note-keeper" target="_blank" rel="noopener nofollow">Note-Keeper</a>: Organize Your GitHub Stars
+                        </p>
+                        <p class="list__item__body">
+                            This is a Single Page Web application built using React Js. It uses the GitHub API and provides user feature to add custom tags and notes on user's starred GitHub repositories [<a href="https://github.com/fumblehool/note-keeper"
+                                target="_blank" rel="noopener nofollow">Code</a>]
+                        </p>
+                    </li>
+
+                    <li class="list__item">
+                        <p class="list__item__heading">
+                            <a href="https://github.com/fumblehool/picsaver-webapp" target="_blank" rel="noopener nofollow">Picsaver WebApp</a>: View and Save Images from Instagram
+                        </p>
+                        <p class="list__item__body">
+                            A web application the allows user to view and download images from instagram platform built using React Js(front-end), Python(flask) and Instagram API [<a href="https://github.com/fumblehool/picsaver-webapp" target="_blank"
+                                rel="noopener nofollow">Code</a>]
+                        </p>
+                    </li>
+
+                    <li class="list__item">
+                        <p class="list__item__heading">
+                            <a href="https://github.com/fumblehool/updateme" target="_blank" rel="noopener nofollow">Updateme</a>: Daily News Reader
+                        </p>
+                        <p class="list__item__body">
+                            A web based application which shows daily news to user based userâ€™s interest, using rssFeed of news provider built using Python (Django) and Rss Feed provider (Times of India) [<a href="https://github.com/fumblehool/updateme"
+                                target="_blank" rel="noopener nofollow">Code</a>]
+                        </p>
+                    </li>
+
+                    <li class="list__item">
+                        <p class="list__item__heading">
+                            <a href="https://github.com/fumblehool/HealthyHabits-Chrome-extension" target="_blank" rel="noopener nofollow">Healthy-habits Chrome Extension</a>: A Google Chrome extension that gives user some health tips [<a href="https://github.com/fumblehool/HealthyHabits-Chrome-extension"
+                                target="_blank" rel="noopener nofollow">Code</a>]
+                        </p>
+                    </li>
+
+                    <li class="list__item">
+                        <p class="list__item__heading">
+                            <a href="https://github.com/fumblehool/smallify" target="_blank" rel="noopener nofollow">Smallify</a>: Social Media Conversion Tool
+                        </p>
+                        <p class="list__item__body">
+                            Consists of a Url Shortener and provides feature to add custom call to action overlay on links [<a href="https://github.com/fumblehool/smallify" target="_blank" rel="noopener nofollow">Code</a>]
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- <div class="shell education" id="education">
+                <h1>Education</h1>
+                <ul class="list">
+                  <li class="list__item">
+                    <p class="list__item__heading">
+                      <a href="https://github.com/fumblehool/HealthyHabits-Chrome-extension" target="_blank" rel="noopener nofollow">Healthy-habits Chrome Extension</a>: A Google Chrome extension that gives user some health tips [<a href="https://github.com/fumblehool/HealthyHabits-Chrome-extension" target="_blank" rel="noopener nofollow">Code</a>]
+                    </p>
+                  </li>
+                </ul>  
+            </div> -->
+        </div>
     </div>
-
-    <div class="shell projects" id="projects">
-      <h1>Projects</h1>
-      <ol class="list">
-        <li class="list__item">
-        <p class="list__item__heading">
-        <a href="https://github.com/fumblehool/pals-around" target="_blank" rel="noopener nofollow">Pals-Around</a>: A Social Networking Platform
-        </p>
-        <p class="list__item__body">
-            A social networking platform where users can post updates, follow users and ability to view the updates (timeline) made using Node.js (express), Mongodb and Docker [<a href="https://github.com/fumblehool/pals-around" target="_blank" rel="noopener nofollow">code</a>]
-        </p>
-        </li>
-
-        <li class="list__item">
-            <p class="list__item__heading">
-                <a href="https://github.com/fumblehool/note-keeper" target="_blank" rel="noopener nofollow">Note-Keeper</a>: Organize Your GitHub Stars
-            </p>
-            <p class="list__item__body">
-                This is a Single Page Web application built using React Js. It uses the GitHub API and provides user feature to add custom tags and notes on user's starred GitHub repositories [<a href="https://github.com/fumblehool/note-keeper" target="_blank" rel="noopener nofollow">Code</a>]
-            </p>
-        </li>
-
-        <li class="list__item">
-            <p class="list__item__heading">
-                <a href="https://github.com/fumblehool/picsaver-webapp" target="_blank" rel="noopener nofollow">Picsaver WebApp</a>: View and Save Images from Instagram
-            </p>
-            <p class="list__item__body">
-                A web application the allows user to view and download images from instagram platform built using React Js(front-end), Python(flask) and Instagram API [<a href="https://github.com/fumblehool/picsaver-webapp" target="_blank" rel="noopener nofollow">Code</a>]
-            </p>
-        </li>
-
-        <li class="list__item">
-            <p class="list__item__heading">
-                <a href="https://github.com/fumblehool/updateme" target="_blank" rel="noopener nofollow">Updateme</a>: Daily News Reader
-            </p>
-            <p class="list__item__body">
-            A web based application which shows daily news to user based userâ€™s interest, using rssFeed of news provider built using Python (Django) and Rss Feed provider (Times of India) [<a href="https://github.com/fumblehool/updateme" target="_blank" rel="noopener nofollow">Code</a>]
-            </p>
-        </li>
-
-        <li class="list__item">
-            <p class="list__item__heading">
-                <a href="https://github.com/fumblehool/HealthyHabits-Chrome-extension" target="_blank" rel="noopener nofollow">Healthy-habits Chrome Extension</a>: A Google Chrome extension that gives user some health tips [<a href="https://github.com/fumblehool/HealthyHabits-Chrome-extension" target="_blank" rel="noopener nofollow">Code</a>]
-            </p>
-        </li>
-
-        <li class="list__item">
-            <p class="list__item__heading">
-                <a href="https://github.com/fumblehool/smallify" target="_blank" rel="noopener nofollow">Smallify</a>: Social Media Conversion Tool
-            </p>
-            <p class="list__item__body">
-                Consists of a Url Shortener and provides feature to add custom call to action overlay on links [<a href="https://github.com/fumblehool/smallify" target="_blank" rel="noopener nofollow">Code</a>]
-            </p>
-        </li>
-    </ol>
-    </div>
-
-    <!-- <div class="shell education" id="education">
-      <h1>Education</h1>
-      <ul class="list">
-        <li class="list__item">
-          <p class="list__item__heading">
-            <a href="https://github.com/fumblehool/HealthyHabits-Chrome-extension" target="_blank" rel="noopener nofollow">Healthy-habits Chrome Extension</a>: A Google Chrome extension that gives user some health tips [<a href="https://github.com/fumblehool/HealthyHabits-Chrome-extension" target="_blank" rel="noopener nofollow">Code</a>]
-          </p>
-        </li>
-      </ul>  
-    </div> -->
-  </div> 
 </body>
 </html>
