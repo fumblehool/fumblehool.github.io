@@ -16,6 +16,10 @@
     width: 80%;
 }
 
+#open_source {
+    width: 80%;
+}
+
 .home {
     display: flex;
     justify-content: center;
@@ -90,6 +94,14 @@
     padding-bottom: 3px;
     border-bottom: 2px solid black;
     color: black;
+}
+
+.open_source {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 0 10%;
 }
 
 .link {
